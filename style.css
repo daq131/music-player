@@ -32,9 +32,12 @@ body {
   left: 50px;
 }
 
-.img-container {
+.img-container img {
   height: 100%;
   width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.5);
 }
 
 h2 {
@@ -88,6 +91,12 @@ h3 {
   font-size: 30px;
   color: rgb(129, 129, 129);
   margin-right: 30px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.fas:hover {
+  filter: brightness(80%);
 }
 
 .main-button {
@@ -98,6 +107,10 @@ h3 {
 
 /* Media Query: iPhone (Vertical) */
 @media screen and (max-width: 376px) {
+  .player-container {
+    width: 95vw;
+  }
+
   .img-container {
     left: 29px;
   }
